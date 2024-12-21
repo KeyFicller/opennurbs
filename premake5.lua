@@ -14,6 +14,6 @@ project "opennurbs"
     }
     
     postbuildcommands {
-        ("{COPY} \"" .. envir_work_space_directory .. "/vendor/opennurbs/bin/x64/Release\" \"../../bin/" .. envir_output_directory .. "/sandbox/\""),
-        ("{COPY} \"" .. envir_work_space_directory .. "/vendor/opennurbs/bin/x64/Release\" \"../../bin/" .. envir_output_directory .. "/unittest/\""),
+        ("{COPY} \"" .. envir_work_space_directory .. "/vendor/opennurbs/bin/x64/Release/opennurbs_public.dll\" \"../../bin/" .. envir_output_directory .. "/sandbox/dll/\""),
+        ("{COPY} \"" .. envir_work_space_directory .. "/vendor/opennurbs/bin/x64/Release/opennurbs_public.dll\" \"../../bin/" .. envir_output_directory .. "/unittest/dll/\""),
     }
